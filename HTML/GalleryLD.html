@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaDev Rent Car</title>
+    <link rel="stylesheet" href="../CSS/LocaDev.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+html{background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(150deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(30deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(150deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(60deg, #35342f77 25%, transparent 25.5%, transparent 75%, #35342f77 75%, #35342f77), linear-gradient(60deg, #35342f77 25%, transparent 25.5%, transparent 75%, #35342f77 75%, #35342f77);
+    background-size: 12px 21px;
+    background-position: 0 0, 0 0, 6px 11px, 6px 11px, 0 0, 6px 11px;}
+
+
+.scrolling-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.card {
+    display: inline-flex;
+    position: absolute;
+    border-image: linear-gradient(#f8d26b, #bd6513) 30;
+    border-width: 8px;
+    border-style: solid;
+    height: auto;
+    width: 70%;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper {
+    /*-webkit-overflow-scrolling: touch;*/
+    padding: 200px 0 220px;
+    background-color: rgb(24, 23, 23);
+    
+}
+
+.next-btn{
+    
+    top: 50%;
+    margin-right: 25px;
+    
+}
+.back-btn{
+    
+    top: 50%;
+    margin-left: 25px;
+    
+}
+.btn:hover button{
+    color: #A0AEC0;
+}
+.btn:hover button:hover{
+    background: #bd6513;
+    color: #fff;
+    box-shadow: 0 0 0.8em 0 rgba(255, 208, 106, 0.8);
+    transform: translateY(-.2em);
+}
+.btn:hover button i{
+    color: #CBD5E0;
+}
+.btn:hover button:hover i{
+    color: #FED7E2;
+    transform: rotate(-10deg);
+} 
+.slideshow .card.active {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    transition: 1s;
+}
+.slideshow .card {
+    clip-path: polygon(20% 0, 20% 0, 44% 100%, 44% 100%);
+    
+} 
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1><Span>locadev</Span></h1><h3>Rent Car</h3><h6><span>S.a.r.l</span></h6>
+        </div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="toggle">&#9776;</label>
+            <div class="menu animate__animated animate__fadeInDown">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="AboutLD.html">A propos</a></li>
+                <li><a href="" class="active">Galerie</a></li>
+                <li><a href="ContactLD.html">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="hero ">
+        <article class="slideshow animate__animated animate__zoomIn" >
+            <div class="scrolling-wrapper ">
+                <img src="../IMG/DACIA DUSTER LDV.png" alt="LDV"  class="card active ">
+                <img src="../IMG/DACIA LODGY LDV(1).png" alt="LDV"  class="card">
+                <img src="../IMG/DACIA LOGAN LDV.png" alt="LDV"  class="card">
+                <img src="../IMG/DACIA STEPWAY 1 LDV.png" alt="LDV"  class="card">
+                <img src="../IMG/DACIA STEPWAY 2 LDV.png" alt="LDV"  class="card">
+                <img src="../IMG/PEUGEOT CLIO LDV.png" alt="LDV"  class="card">
+                <img src="../IMG/RENAULT CLIO W LDV.png " alt="LDV"  class="card">
+                <img src="../IMG/RENAULT CLIOO LDV.png" alt="LDV"  class="card">
+                <img src="../IMG/RENAULT CONGO LDV.png" alt="LDV"  class="card">
+                <!--<img src="../IMG/PEUGEOT 308 LDV.png" alt="LDV"  class="card">-->
+            </div>
+        </article>
+        
+    </div>
+    <div class="multi-button">
+        <button style="
+        border: #d41807 5px solid;
+        background: linear-gradient(92deg, rgba(71,71,71,1) 0%, rgba(17,16,16,1) 100%);
+        "><i class="material-icons">call</i><a href="Tel: 0668-156-968"></a></button>
+    </div>
+    <div class="btn">
+        <button class="back-btn"><i class="fa fa-arrow-left"></i> back</button>
+        <button class="next-btn"><i class="fa fa-arrow-right"></i> next</button>
+    </div>
+
+
+    <script>
+        const nextBtn = document.querySelector(".next-btn");
+        const backBtn = document.querySelector(".back-btn");
+        const cards = document.querySelectorAll(".card");
+        const numberOfCards = cards.length;
+        var slidenumber = 0;
+
+        nextBtn.addEventListener("click", () => {
+            cards.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            
+            slidenumber++;
+
+            if(slidenumber > (numberOfCards -1)){
+                slidenumber = 0;
+            }
+            cards[slidenumber].classList.add("active");
+        });
+
+        backBtn.addEventListener("click", () => {
+            cards.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            
+            slidenumber--;
+
+            if(slidenumber < 0){
+                slidenumber = numberOfCards - 1;
+            }
+            cards[slidenumber].classList.add("active");
+        });
+    </script>
+
+</body>
+</html>

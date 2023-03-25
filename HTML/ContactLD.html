@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaDev Rent Car</title>
+    <link rel="stylesheet" href="../CSS/LocaDev.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    html{background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(150deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(30deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(150deg, #35342f 12%, transparent 12.5%, transparent 87%, #35342f 87.5%, #35342f), linear-gradient(60deg, #35342f77 25%, transparent 25.5%, transparent 75%, #35342f77 75%, #35342f77), linear-gradient(60deg, #35342f77 25%, transparent 25.5%, transparent 75%, #35342f77 75%, #35342f77);
+    background-size: 12px 21px;
+    background-position: 0 0, 0 0, 6px 11px, 6px 11px, 0 0, 6px 11px;}
+
+    .form{
+        width:340px;
+        height:440px;
+        background:#e6e6e6;
+        border-radius:8px;
+        box-shadow:0 0 40px -10px #000;
+        /*margin:calc(50vh - 220px) auto;*/
+        padding:20px 30px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+        font-family:'Montserrat',sans-serif;
+        
+    }
+
+    h2{
+        margin:10px 0;
+        padding-bottom:10px;
+        width:180px;
+        color:#bd6513;
+        border-bottom:3px solid #bd6513;
+    } 
+    input{
+        width:100%;
+        padding:10px;
+        box-sizing:border-box;
+        background:none;
+        outline:none;
+        resize:none;
+        border:0;
+        font-family:'Montserrat',sans-serif;
+        transition:all .3s;
+        border-bottom:2px solid #bebed2;
+    } 
+    input:focus{
+        border-bottom:2px solid #78788c;
+    }
+    
+    p:before{
+        content:attr(type);
+        display:block;
+        margin:28px 0 0;
+        font-size:14px;
+        color:#5a5a5a;
+    }
+    
+    .send{
+        float:right;
+        padding:8px 12px;
+        margin:8px 0 0;
+        font-family:'Montserrat',sans-serif;
+        border:2px solid #78788c;
+        background:0;
+        color:#5a5a6e;
+        cursor:pointer;
+        transition:all .3s
+    } 
+    .send:hover{
+        background:#f8d26b;
+        color:#000;
+    }
+    
+    .format {
+        content:'Hi';
+        position:absolute;
+        margin-top: 70px;
+        background:#bd6513;
+        color:#fff;
+        width:320px;
+        padding:16px 4px 16px 0;
+        border-radius:6px;font-size:13px;
+        box-shadow:10px 10px 40px -14px #000;
+    } 
+    .format span{
+        margin:0 5px 0 15px;
+    } 
+    
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1><Span>locadev</Span></h1><h3>Rent Car</h3><h6><span>S.a.r.l</span></h6>
+        </div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="toggle">&#9776;</label>
+            <div class="menu animate__animated animate__fadeInDown">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="AboutLD.html">A propos</a></li>
+                <li><a href="GalleryLD.html">Galerie</a></li>
+                <li><a href="" class="active">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="contact">
+        <article>
+            <form class="form animate__animated animate__slideInUp">
+                <h2>CONTACT US</h2>
+                <p type="Name:"><input placeholder="Write your name here.."></input></p>
+                <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+                <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+                <div class="send">Send Message</div>
+                <div class="format">
+                    <span class="fa fa-phone"></span><a href="Tel: 0668-156-968" style="color: inherit;">0668-156-968</a>
+                    <span class="fa fa-envelope-o"></span> contact@company.com
+                </div>
+            </form>
+        </article>
+        <article style="border-image: linear-gradient(#f8d26b, #bd6513) 30;
+        border-width: 8px;
+        border-style: solid;" class="animate__animated animate__slideInDown">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6521.347252670591!2d-6.152569999191567!3d35.18968629712686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0bc92a648f302f%3A0x1a67e4752ee08f7d!2sLocadev%20rent%20car%20-%20location%20voiture%20larache%20(alquiler%20de%20coches%20larache)!5e0!3m2!1sen!2sma!4v1677711308430!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </div>
+    
+</body>
+</html>
